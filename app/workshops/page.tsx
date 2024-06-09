@@ -48,8 +48,7 @@ export default function Workshops({
     <>
       {hasSignedUp && signedUpWorkshop && (
         <h1 className={styles.successMessage}>
-          You have successfully signed up for {signedUpWorkshop.title} on{" "}
-          {signedUpWorkshop.date}!
+          You have successfully signed up for {signedUpWorkshop.title} workshop!
         </h1>
       )}
 

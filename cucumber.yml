@@ -1,0 +1,10 @@
+default:
+  parallel: 2
+  format:
+    - "html:cucumber-report.html"
+    - "summary"
+    - "progress-bar"
+  loader:
+    - "ts-node/esm"
+  import:
+    - "testing/**/*.ts"

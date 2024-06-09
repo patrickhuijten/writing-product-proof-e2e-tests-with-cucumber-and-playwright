@@ -1,0 +1,35 @@
+form.form {
+  margin-top: 2rem !important;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+  opacity: 0.2;
+}
+
+form.form label {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+form.form label input {
+  border-radius: var(--border-radius);
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+form.form button[type="submit"] {
+  border-radius: var(--border-radius);
+  outline: none;
+  border: none;
+  padding: 1rem;
+  background-color: var(--accent-color);
+}
+
+form.form[data-active="true"] {
+  opacity: 1;
+}

@@ -1,0 +1,21 @@
+div.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+div.container[aria-disabled="true"] {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+div.workshopList {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+
+h1.successMessage {
+  margin-bottom: 2rem;
+}

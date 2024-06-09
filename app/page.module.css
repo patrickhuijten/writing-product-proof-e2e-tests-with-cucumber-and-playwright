@@ -1,0 +1,18 @@
+h1.title {
+  font-size: 72px;
+}
+
+div.hero {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "dates intro"
+    ". description";
+  grid-auto-columns: 1fr;
+  grid-auto-rows: max-content;
+  gap: 20px;
+}
+
+p.description {
+  line-height: 1.5;
+}

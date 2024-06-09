@@ -1,0 +1,20 @@
+div.workshopCard {
+  border-radius: var(--border-radius);
+  background-color: #444;
+  height: 200px;
+  display: grid;
+  opacity: 0.2;
+  transition: opacity 0.2s;
+  will-change: opacity;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+div.workshopCard[data-active="true"],
+div.workshopCard:hover {
+  opacity: 1;
+}
+
+h2.title {
+  font-size: 2rem;
+}

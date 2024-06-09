@@ -32,7 +32,6 @@ export default function Workshops({
     },
   ];
 
-  console.log(searchParams);
   const activeId = searchParams?.id ? parseInt(searchParams.id) : null;
   const selectedWorkshop = workshops.find(({ id }) => id === activeId) || null;
 

@@ -28,6 +28,7 @@ form.form button[type="submit"] {
   border: none;
   padding: 1rem;
   background-color: var(--accent-color);
+  color: #111;
 }
 
 form.form[data-active="true"] {

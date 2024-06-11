@@ -1,7 +1,7 @@
 # Writing product-proof E2E tests with Cucumber & Playwright
 
 > [!TIP]
-> *Feel free to star / save this repository as a reference if you want to implement your own Cucumber/Playwright tests.*
+> *Feel free to ⭐️ or bookmark this repository as a reference if you want to implement your own Cucumber/Playwright tests.*
 
 This repository contains the source for a lightning talk I gave at Advanced JS meetup (JS Nation pre-event) in Amsterdam on June 11 2024.
 

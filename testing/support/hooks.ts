@@ -3,9 +3,11 @@ import { chromium } from "@playwright/test";
 import { CustomWorld } from "./custom-world";
 
 Before<CustomWorld>(async function () {
-  this.browser = await chromium.launch({ headless: false });
+  this.browser = await chromium.launch({
+    headless: process.env.RECORD !== "true",
+  });
 
-  const context = process.env.RECORD_VIDEO
+  const context = process.env.RECORD
     ? { recordVideo: { dir: "videos/" } }
     : undefined;
   this.context = await this.browser.newContext(context);
@@ -19,5 +21,5 @@ After<CustomWorld>(async function () {
 });
 
 AfterStep<CustomWorld>(async function () {
-  if (process.env.RECORD_VIDEO) await this.page.waitForTimeout(1000);
+  if (process.env.RECORD) await this.page.waitForTimeout(1000);
 });

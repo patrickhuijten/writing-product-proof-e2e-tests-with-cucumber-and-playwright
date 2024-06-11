@@ -2,6 +2,8 @@ import { expect } from "@playwright/test";
 import { Given, Then, When } from "@cucumber/cucumber";
 import { CustomWorld } from "../support/custom-world";
 
+const delay = process.env.RECORD ? 100 : 0;
+
 Given<CustomWorld>("Go to the home page", async function () {
   await this.page.goto("http://localhost:3000");
 });
@@ -17,7 +19,7 @@ When<CustomWorld>(
   "User fills in their first name {string}",
   async function (firstName: string) {
     const input = this.page.getByRole("textbox", { name: "First name*" });
-    await input.pressSequentially(firstName);
+    await input.pressSequentially(firstName, { delay });
   }
 );
 
@@ -25,7 +27,7 @@ When<CustomWorld>(
   "User fills in their last name {string}",
   async function (lastName: string) {
     const input = this.page.getByRole("textbox", { name: "Last name*" });
-    await input.pressSequentially(lastName);
+    await input.pressSequentially(lastName, { delay });
   }
 );
 
@@ -33,7 +35,7 @@ When<CustomWorld>(
   "User fills in their email address {string}",
   async function (emailAddress: string) {
     const input = this.page.getByRole("textbox", { name: "Email*" });
-    await input.pressSequentially(emailAddress);
+    await input.pressSequentially(emailAddress, { delay });
   }
 );
 

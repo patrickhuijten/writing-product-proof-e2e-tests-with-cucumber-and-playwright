@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "cucumber-js",
-    "test:record": "RECORD_VIDEO=true cucumber-js"
+    "test:record": "RECORD=true cucumber-js"
   },
   "dependencies": {
     "next": "14.2.3",

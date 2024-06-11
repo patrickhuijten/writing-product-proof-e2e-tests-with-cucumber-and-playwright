@@ -1,9 +1,7 @@
-Feature: Home page
-
-  Background: Navigation
-    Given Go to the home page
+Feature: Workshops page
 
   Scenario: User signs up for a workshop on the workshops page
+    Given Go to the home page
     When User navigate to the "Workshops" page
     When User clicks on "React hooks" card
     When User fills in their first name "John"

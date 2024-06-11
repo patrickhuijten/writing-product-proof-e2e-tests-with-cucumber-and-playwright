@@ -41,8 +41,8 @@ When<CustomWorld>(
 
 When<CustomWorld>(
   "User clicks the {string} button",
-  async function (cardName: string) {
-    await this.page.getByRole("button", { name: cardName }).click();
+  async function (buttonName: string) {
+    await this.page.getByRole("button", { name: buttonName }).click();
   }
 );
 

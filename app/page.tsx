@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className={styles.hero}>
       <h1 className={styles.title} style={{ gridArea: "title" }}>
-        The coolest pre-event of JS conference 2024
+        The coolest pre-event of <span>JS Nation</span> 2024
       </h1>
       <p className={styles.description} style={{ gridArea: "dates" }}>
         June 12 @ Xebia | Wibautstraat 200, 1091 GR Amsterdam

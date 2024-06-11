@@ -2,6 +2,10 @@ h1.title {
   font-size: 72px;
 }
 
+h1.title > span {
+  color: var(--accent-color);
+}
+
 div.hero {
   display: grid;
   grid-template-areas:

@@ -2,7 +2,7 @@ import { expect } from "@playwright/test";
 import { Given, Then, When } from "@cucumber/cucumber";
 import { CustomWorld } from "../support/custom-world";
 
-const delay = process.env.RECORD ? 100 : 0;
+const delay = process.env.RECORD ? 100 : undefined;
 
 Given<CustomWorld>("Go to the home page", async function () {
   await this.page.goto("http://localhost:3000");

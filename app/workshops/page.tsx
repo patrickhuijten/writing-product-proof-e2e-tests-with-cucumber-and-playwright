@@ -43,12 +43,14 @@ export default function Workshops({
   const signedUpWorkshop =
     workshops.find(({ id }) => id === signedUpWorkshopId) || null;
 
+  const signedUpMessage = signedUpWorkshop
+    ? `You have successfully signed up for ${signedUpWorkshop.title} workshop!`
+    : null;
+
   return (
     <>
       {hasSignedUp && signedUpWorkshop && (
-        <h1 className={styles.successMessage}>
-          You have successfully signed up for {signedUpWorkshop.title} workshop!
-        </h1>
+        <h1 className={styles.successMessage}>{signedUpMessage}</h1>
       )}
 
       <div className={styles.container} aria-disabled={hasSignedUp}>

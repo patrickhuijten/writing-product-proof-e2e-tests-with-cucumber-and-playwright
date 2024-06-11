@@ -19,9 +19,9 @@ export default function WorkshopForm({
 
     const rawFormData = {
       workshopId,
-      customerId: formData.get("fname"),
-      amount: formData.get("lname"),
-      status: formData.get("email"),
+      firstName: formData.get("fname"),
+      lastName: formData.get("lname"),
+      email: formData.get("email"),
     };
 
     console.log("User signed up with the following data:", rawFormData);

@@ -54,17 +54,6 @@ When<CustomWorld>(
 );
 
 Then<CustomWorld>(
-  "User sees the navigation links {string}",
-  async function (links: string) {
-    const splitLinks = links.split(",").map((link) => link.trim());
-    for (const link of splitLinks) {
-      const text = this.page.getByRole("link", { name: link });
-      await expect(text).toBeVisible();
-    }
-  }
-);
-
-Then<CustomWorld>(
   "User sees the title {string}",
   async function (title: string) {
     const text = this.page.getByText(title);

@@ -5,7 +5,7 @@
 
 This repository contains the source for a lightning talk I gave at Advanced JS meetup (JS Nation pre-event) in Amsterdam on June 11 2024.
 
-![PICKLE RICK](./docs/pickle-rick.gif)
+<img src="./docs/pickle-rick.gif" width="100%">
 
 ## Instructions
 
